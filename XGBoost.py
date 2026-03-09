@@ -15,7 +15,6 @@ model_sip = XGBRegressor(
 )
 
 model_sip.fit(X_train_sip, y_train_sip,
-              early_stopping_rounds=10,
               eval_set=[(X_test_sip, y_test_sip)],
               verbose=False)
 
@@ -31,7 +30,6 @@ model_wig = XGBRegressor(
 )
 
 model_wig.fit(X_train_wig, y_train_wig,
-              early_stopping_rounds=10,
               eval_set=[(X_test_wig, y_test_wig)], 
               verbose=False)
 
