@@ -6,10 +6,10 @@ from statsmodels.stats.diagnostic import het_arch
 from statsmodels.tsa.stattools import adfuller
 
 df_sip = pd.read_csv(
-    "C:/Users/niemi/OneDrive - Uniwersytet Ekonomiczny w Poznaniu/Pulpit/Datasets/^spx_d.csv"
+    "^spx_d.csv"
 )
 df_wig = pd.read_csv(
-    "C:/Users/niemi/OneDrive - Uniwersytet Ekonomiczny w Poznaniu/Pulpit/Datasets/wig20_d.csv"
+    "wig20_d.csv"
 )
 
 print(df_wig.isnull().sum())
